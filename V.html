@@ -1,0 +1,115 @@
+<!-- feedback docent: 	Moet niet maar het kan handig zijn om de navigatie werkent te maken -->
+					<!-- inline style verplaatsen naar css is veel makkelijker voor jezelf om er in iets aan te passen. -->
+
+<html>
+<head>
+<title>SpaceX</title>
+<link rel="stylesheet" type="text/css" href="css/challenge1.css"/>
+<script src="script/hamburgermenu.js"/></script>
+<meta name="viewport" content="width=device-width, initial-scale: 1.0, user-scalabe=0"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	
+<div class="topnav">
+		
+		<div class="logo"> 
+			<img src="img/logo.png" alt="Girl in a jacket" href="#home" class="active">
+			 <br>
+			<h2> DashBoard</h2>
+		</div>
+
+  <div id="myLinks">
+				<li><a>  </a></li>
+				<li><a href="VI.html"> Voertuig informatie </a></li>
+				<li><a href="VO.html"> Voertuig omgeving </a></li>
+				<li><a href="V.html" class="active"> Voorraden </a></li>
+<!-- 				<li><a href="T.html"> Tools </a></li> -->
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+		
+		<div class="flex-container">
+			
+				<div class="flex-box">
+				<legend>Eten</legend>
+				<canvas id="eten" style="height:200px; width: 100%; padding: 0px 20px 0px 10px; margin:25px 0px 0px 0px;"></canvas>
+				<script>
+				var ctx = document.getElementById("eten").getContext('2d');
+				var brandstof = new Chart(ctx, {
+					type: 'bar',
+					data: {
+						labels: ["Brood", "Groente", "Fruit", "Vlees"],
+						datasets: [{
+							label: 'Planeten ',
+							data: [18, 14, 2, 7, 9],
+							backgroundColor: [
+								'rgba(255, 99, 132, 0.2)',
+								'rgba(54, 162, 235, 0.2)',
+								'rgba(255, 206, 86, 0.2)',
+								'rgba(75, 192, 192, 0.2)',
+								'rgba(153, 102, 255, 0.2)',
+								'rgba(255, 159, 64, 0.2)'
+							],
+							borderColor: [
+								'rgba(255,99,132,1)',
+								'rgba(54, 162, 235, 1)',
+								'rgba(255, 206, 86, 1)',
+								'rgba(75, 192, 192, 1)',
+								'rgba(153, 102, 255, 1)',
+								'rgba(255, 159, 64, 1)'
+							],
+							borderWidth: 1
+						}]
+					},
+					options: {
+						scales: {
+							yAxes: [{
+								ticks: {
+									beginAtZero:true
+								}
+							}]
+						}
+					}
+				});
+				</script>
+				</div>
+			
+		
+				<div class="flex-box">
+				 <legend>Water</legend>
+<canvas id="water" style="height: 200px; width: 100%; padding:0px 20px 0px 10px; margin:25px 0px 0px 0px;"></canvas>
+				<script>
+				new Chart(document.getElementById("water"),{
+					"type":"line",
+					"data":{	
+						"labels":["January","February","Maart","April","Mei","June","Juli"],
+						"datasets":[{
+						"label":"Van het jaar 2019",
+						"data":[100,96,95,91,87,85,82],
+						"fill":false,"borderColor":"rgb(75, 192, 192)",
+						"lineTension":0.1}]},
+						"options":{}});
+						
+						
+						
+						
+				</script>
+				</div> 
+					
+		</div>	
+		
+	</div>	
+		
+
+
+
+
+
+</body>
+</html>
