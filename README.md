@@ -18,7 +18,7 @@ Galaxy A70 414 x 736,
 
 Apple 5/SE 320 x 568
 
-<button type="submit"><a href="https://elmas04.github.io/17105226-CMD-XT2-challenge1/VI.html">KLIK HIER OM NAAR CHALLENGE 1 TE GAAN</a></button>
+
 <p><a href="https://elmas04.github.io/17105226-CMD-XT2-challenge1/VI.html">KLIK HIER OM NAAR CHALLENGE 1 TE GAAN</a></p>
 
 
