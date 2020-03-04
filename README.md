@@ -14,4 +14,6 @@ iPad liggend 1024 x 768,
 iPad staand 1024 x 768, 
 Galaxy A70 414 x 736, 
 Apple 5/SE 320 x 568
+
+
 https://elmas04.github.io/17105226-CMD-XT2-challenge1/VI.html 
